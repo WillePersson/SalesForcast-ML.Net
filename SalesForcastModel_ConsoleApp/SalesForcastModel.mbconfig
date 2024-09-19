@@ -1,0 +1,366 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\laymt\\OneDrive\\Skrivbord\\simulated_company_sales.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "CompanyID",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Month",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "NumberOfEmployees",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MarketingBudget",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "IndustryType",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "HistoricalSales",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "ProjectedSales",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.99931458821351649,
+        "RuntimeInSeconds": 8.408,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "IndustryType"
+            ],
+            "InputColumnNames": [
+              "IndustryType"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "InputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "IndustryType",
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.84230703,
+            "LabelColumnName": "ProjectedSales",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.99931381926792251,
+        "RuntimeInSeconds": 8.451,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "IndustryType"
+            ],
+            "InputColumnNames": [
+              "IndustryType"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "InputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "IndustryType",
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 1.072168,
+            "LabelColumnName": "ProjectedSales",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.999313387626543,
+        "RuntimeInSeconds": 8.357,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "IndustryType"
+            ],
+            "InputColumnNames": [
+              "IndustryType"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "InputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "IndustryType",
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 0.17342164,
+            "L2Regularization": 0.28840476,
+            "LabelColumnName": "ProjectedSales",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.99930859110381864,
+        "RuntimeInSeconds": 9.198,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "IndustryType"
+            ],
+            "InputColumnNames": [
+              "IndustryType"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "InputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "IndustryType",
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 0.67545766,
+            "L2Regularization": 0.37795678,
+            "LabelColumnName": "ProjectedSales",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "SdcaRegression",
+        "Score": 0.99930360290251952,
+        "RuntimeInSeconds": 9.598,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "IndustryType"
+            ],
+            "InputColumnNames": [
+              "IndustryType"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "InputColumnNames": [
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "IndustryType",
+              "CompanyID",
+              "Month",
+              "NumberOfEmployees",
+              "MarketingBudget",
+              "HistoricalSales"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 0.099126376,
+            "L2Regularization": 0.8419655,
+            "LabelColumnName": "ProjectedSales",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\laymt\\source\\ML-And-AI\\SalesForcast-ML.Net\\SalesForcast-ML.Net\\SalesForcastModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 200,
+    "LabelColumn": "ProjectedSales",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
